@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Comic Sans MS;
+
+}
+.menu-topo{
+    width:100%;
+    height:80px;
+    background:#E5DFE0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 40px;
+  }
+.menu{
+   display:flex;
+    gap:25px;
+}
