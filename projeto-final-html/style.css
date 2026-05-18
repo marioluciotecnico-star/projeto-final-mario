@@ -4,7 +4,6 @@ body {
   background-color: #a9bfd1;
 }
 
-/* TOPO */
 header {
   display: flex;
   justify-content: space-between;
@@ -13,7 +12,6 @@ header {
   background-color: #a9bfd1;
 }
 
-/* LOGO */
 .logo h1 {
   font-size: 28px;
   color: #000;
@@ -23,7 +21,6 @@ header {
   color: #2b6cb0;
 }
 
-/* MENU */
 .menu a {
   margin: 0 15px;
   text-decoration: none;
@@ -35,7 +32,7 @@ header {
   border-bottom: 2px solid #2b6cb0;
 }
 
-/* BOTÃO */
+
 .botao {
   border: 2px solid #2b6cb0;
   padding: 10px 20px;
