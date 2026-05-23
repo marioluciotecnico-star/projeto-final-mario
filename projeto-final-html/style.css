@@ -11,20 +11,6 @@ body{
   color:white;
 }
 
-
-.background{
-  position:fixed;
-  width:100%;
-  height:100%;
-  background:
-  radial-gradient(circle at top,#00ffcc33,transparent 40%),
-  radial-gradient(circle at bottom,#ff00ff22,transparent 40%),
-  #050510;
-  z-index:-1;
-}
-
-
-
 header{
   display:flex;
   justify-content:space-between;
@@ -334,4 +320,124 @@ header{
     padding:20px;
   }
 
+}
+.comentarios{
+  width:100%;
+  padding:100px 50px;
+  background:
+  linear-gradient(
+    90deg,
+    rgba(0,255,238,0.05),
+    rgba(255,0,255,0.05)
+  );
+}
+
+.comentarios h2{
+  text-align:center;
+  font-size:55px;
+  margin-bottom:70px;
+  color:#00ffee;
+  text-shadow:0 0 20px #00ffee;
+}
+
+.comentarios-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+
+  gap:90px;
+
+  max-width:1400px;
+  margin:auto;
+
+  padding:40px 20px;
+}
+
+.comentario-card{
+  width:320px;
+  padding:40px 25px;
+  border-radius:25px;
+
+  background:rgba(255,255,255,0.05);
+
+  border:1px solid rgba(0,255,238,0.2);
+
+  backdrop-filter:blur(15px);
+
+  text-align:center;
+
+  transition:0.5s;
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+
+.comentario-card::before{
+  content:'';
+  position:absolute;
+  inset:0;
+
+  background:
+  repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 35px,
+    rgba(255,255,255,0.03) 35px,
+    rgba(255,255,255,0.03) 70px
+  );
+
+  pointer-events:none;
+}
+
+
+.comentario-card:hover{
+  transform:translateY(-12px);
+
+  box-shadow:
+  0 0 25px rgba(0,255,238,0.5),
+  0 0 50px rgba(255,0,255,0.2);
+}
+
+
+.comentario-card img{
+  width:90px;
+  height:90px;
+
+  border-radius:50%;
+
+  object-fit:cover;
+
+  margin-bottom:20px;
+
+  border:3px solid #00ffee;
+
+  box-shadow:0 0 20px #00ffee55;
+}
+
+
+.stars{
+  color:#ffee00;
+  font-size:22px;
+  margin-bottom:15px;
+  text-shadow:0 0 10px #ffee00;
+}
+
+
+.comentario-card h3{
+  color:#ffffff;
+  margin-bottom:15px;
+  font-size:24px;
+}
+
+
+.comentario-card p{
+  color:#cccccc;
+  line-height:1.8;
+  font-size:15px;
+}
+.comentario-card{
+  width:280px;
 }
